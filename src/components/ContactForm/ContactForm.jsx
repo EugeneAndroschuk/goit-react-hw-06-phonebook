@@ -8,7 +8,7 @@ const ContactForm = () => {
   const[name, setName] = useState('');
   const [number, setNumber] = useState('');
   const dispatch = useDispatch();
-  const contactsFromStore = useSelector(state => state.contacts.contacts);
+  const contactsFromStore = useSelector(state => state.contacts);
 
   const handleSubmitForm = e => {
     e.preventDefault();
